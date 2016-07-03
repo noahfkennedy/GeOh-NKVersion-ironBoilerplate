@@ -1,0 +1,22 @@
+<template name="UserLogin">
+
+  <div class="create-account">
+
+  </div>
+  <div class="login-services">
+    {{#if currentUser.services.facebook}}
+      {{currentUser.services.facebook.name}} -
+      {{currentUser.services.facebook.gender}}
+      <button id="facebook-logout">Logout</button>
+    {{else}}
+      {{#if currentUser.services.google}}
+        {{currentUser.services.google.name}}
+        <button id="google-logout">Logout</button>
+      {{else}}
+        <button id="facebook-login" class="btn btn-default">Login with Facebook</button>
+        <button id="google-login" class="butn btn-default">Login with Google</button>
+      {{/if}}
+    {{/if}}
+  </div>
+
+</template>

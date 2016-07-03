@@ -1,0 +1,45 @@
+<head>
+  <title>GeOh: A democratic and evolving map.</title>
+  <!--What's up with meta?-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400' rel='stylesheet' type='text/css'>
+  <!--Favicon-->
+  <link rel="icon" sizes="1000x1000" href="/GEOH_cityLake.jpg">
+</head>
+
+<body id="bodyContainer">
+  {{> UserLogin}}
+  <!--{{> searchBar}}-->
+  {{> title}}
+  {{> map}}
+  {{> descriptionBox}}
+</body>
+
+<template name="title">
+  <!--<h1 id="title"><strong>Welcome to Geoh! Start by clicking/tapping the map. </strong></h1>-->
+  <h3 id="subtitle"> Click/Tap on the map to add an observation <br> you have about your surroundings. </h3>
+</template>
+
+<template name="searchBar">
+  <form class="searchQuery">
+    <input type="text" name="text" placeholder="Search posts by category">
+  </form>
+  <h1>Current Search: <span id="currentSearch">{{currentCategory}}</span></h1>
+</template>
+
+<template name="map">
+  <div id="map"></div>
+</template>
+
+<template name="descriptionBox">
+  <div id="box">
+    <h1>  "{{description}}" </h1>
+  </div>
+</template>
+
+<template name="login">
+  <div id="container">
+
+
+  </div>
+</template>

@@ -1,0 +1,133 @@
+
+/*---------Mmmm Dat Bod!---------*/
+#bodyContainer {
+  background: #BDD4DE;
+
+  margin-top: 2%;
+}
+
+
+/*------Text at top-----------*/
+h3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  text-align: center;
+  background-color: #EFEFEF;
+  color: #003A59;
+
+  font-size: 10pt;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+
+
+/*------Map-----------*/
+#map {
+  /*width: 1000px;*/
+  background: #EFEFEF;
+
+  margin-bottom: 6px;
+  max-height: 265px;
+  /*margin-left: 30em;*/
+}
+
+
+/*-------Display Box---------*/
+#box {
+  text-align: center;
+  background: #EFEFEF;
+  color: #009C68;
+  font-family: 'Roboto Slab', serif;
+
+  font-size: 82%;
+}
+
+@media only screen and (min-width: 420px){
+  #map {
+    max-height: 380px;
+  }
+}
+
+@media only screen and (min-width: 480px){
+  #map {
+    max-height: 455px;
+  }
+}
+
+@media only screen and (min-width: 540px){
+  #map {
+    max-height: 475px;
+  }
+}
+
+@media only screen and (min-width: 700px){
+  #map {
+    max-height: 610px;
+  }
+}
+
+@media only screen and (min-width: 800px){
+  #map {
+    max-height: 750px;
+  }
+  #box{
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 1080px){
+  #map {
+    max-height: 900px;
+  }
+  #box{
+    font-size: 105%
+  }
+}
+
+
+/*
+@media only screen and (max-width: 640px){
+  #map {
+    margin-left: 0%;
+    margin-right: 0%;
+    max-height: 300px;
+    margin-left: 0%;
+    margin-right: 0%;
+    }
+  }
+
+@media only screen and (min-width: 1080px){
+  #map{
+    margin-left: 5%;
+    margin-right: 5%;
+    max-height: 300px;
+  }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------Not in use currently
+#currentSearch {
+  color: white;
+}
+*/
+
+/*----I dunno what this is for honestly
+.mapsmarker {
+text-align: center;
+margin-left: 100px;
+margin-right: 100px;
+}
+*/
