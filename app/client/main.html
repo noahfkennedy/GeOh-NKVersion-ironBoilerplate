@@ -8,11 +8,15 @@
 </head>
 
 <body id="bodyContainer">
-  {{> UserLogin}}
+  {{> loginButtons}}
+  <div class="col-sm-6">
+    {{> title}}
+    {{> Map}}
+  </div>
+  <div class="col-sm-6">
+    {{> descriptionBox}}
+  </div>
   <!--{{> searchBar}}-->
-  {{> title}}
-  {{> map}}
-  {{> descriptionBox}}
 </body>
 
 <template name="title">
@@ -25,10 +29,6 @@
     <input type="text" name="text" placeholder="Search posts by category">
   </form>
   <h1>Current Search: <span id="currentSearch">{{currentCategory}}</span></h1>
-</template>
-
-<template name="map">
-  <div id="map"></div>
 </template>
 
 <template name="descriptionBox">
